@@ -70,6 +70,18 @@ Contributions are welcome! Please read [CONTRIBUTING.md](./CONTRIBUTING.md) and 
 
 See [SECURITY.md](./SECURITY.md) for how to report vulnerabilities.
 
+## Maintainers / project ops
+
+Maintainer guide: [MAINTAINING.md](./MAINTAINING.md) · Quality bar: [docs/quality-bar.md](./docs/quality-bar.md)
+
+| Doc                                                            | Purpose                                                                 |
+| -------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| [docs/contributors-tracker.md](./docs/contributors-tracker.md) | Unique external merged-PR contributors (rolling 12 months)              |
+| [docs/external-prs-tracker.md](./docs/external-prs-tracker.md) | Logged merged PRs to repos the maintainer doesn’t own                   |
+| [docs/eligibility-notes.md](./docs/eligibility-notes.md)       | Pointers to official Claude for OSS criteria (re-check before applying) |
+
+Optional: `npm run stats` lists recent merged PRs from non-owners (see script limitations).
+
 ## License
 
 [MIT](./LICENSE) © 2026 Danny / Daannnyyyy

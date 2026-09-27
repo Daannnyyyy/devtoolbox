@@ -113,6 +113,12 @@ export interface ToolDefinition {
 
 If you used AI tools (ChatGPT, Copilot, Claude, etc.) to help write code or docs, please say so briefly in the PR description. Disclosure is encouraged so reviewers can give appropriate attention — it is not a reason to reject a contribution.
 
+## Quality bar & maintainers
+
+- Project quality standards: [docs/quality-bar.md](./docs/quality-bar.md)
+- Maintainer review / merge criteria: [MAINTAINING.md](./MAINTAINING.md)
+- Contributor trackers (maintainers): [docs/contributors-tracker.md](./docs/contributors-tracker.md), [docs/external-prs-tracker.md](./docs/external-prs-tracker.md)
+
 ## Code of Conduct
 
 By participating, you agree to uphold our [Code of Conduct](./CODE_OF_CONDUCT.md).

@@ -1,7 +1,7 @@
 {
   "name": "devtoolbox",
   "version": "0.1.0",
-  "description": "A lightweight, browser-only collection of everyday developer utilities — format, encode, convert, and inspect common data without leaving the tab.",
+  "description": "A lightweight, browser-only collection of everyday developer utilities \u2014 format, encode, convert, and inspect common data without leaving the tab.",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,7 +11,8 @@
     "test:watch": "vitest",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "stats": "bash scripts/update-contributor-stats.sh"
   },
   "keywords": [
     "developer-tools",

@@ -1,0 +1,5 @@
+# Critical paths — request review from the maintainer.
+# CODEOWNERS is advisory unless require_code_owner_reviews is enabled.
+
+/.github/ @Daannnyyyy
+/src/core/ @Daannnyyyy
