@@ -1,0 +1,45 @@
+name: New tool
+description: Propose a new developer utility for DevToolbox
+title: '[tool] '
+labels: ['enhancement', 'new-tool']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Propose a browser-only tool. Remember: no server, no accounts, data stays local.
+  - type: input
+    id: tool_name
+    attributes:
+      label: Tool name
+      placeholder: e.g. JWT Decoder
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What does the tool do? Typical inputs and outputs?
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Suggested category
+      placeholder: e.g. Encoding, Text, Time, Data
+    validations:
+      required: false
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy / client-only notes
+      description: Confirm the tool can run fully in-browser. Call out any Web Crypto or other APIs needed.
+      placeholder: Uses Web Crypto for SHA-256; no network.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Specs, similar tools, or sample inputs (non-sensitive).
+    validations:
+      required: false
