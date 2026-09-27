@@ -117,7 +117,7 @@ If you used AI tools (ChatGPT, Copilot, Claude, etc.) to help write code or docs
 
 - Project quality standards: [docs/quality-bar.md](./docs/quality-bar.md)
 - Maintainer review / merge criteria: [MAINTAINING.md](./MAINTAINING.md)
-- Contributor trackers (maintainers): [docs/contributors-tracker.md](./docs/contributors-tracker.md), [docs/external-prs-tracker.md](./docs/external-prs-tracker.md)
+- Community contributors log (maintainers): [docs/contributors-tracker.md](./docs/contributors-tracker.md)
 
 ## Code of Conduct
 

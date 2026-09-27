@@ -68,17 +68,15 @@ On every push and PR to `main`, CI runs: `lint` → Prettier `--check` → `type
 
 We do **not** use auto-merge bots.
 
-## Contributor / eligibility trackers
+## Community contributor tracker
 
-Honest, in-repo logs (not marketing fluff):
+Keep an honest log of people outside the owner account who land merged PRs here:
 
-| Doc                                                            | Purpose                                                                 |
-| -------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| [docs/contributors-tracker.md](./docs/contributors-tracker.md) | Unique external merged-PR contributors (Community builders route)       |
-| [docs/external-prs-tracker.md](./docs/external-prs-tracker.md) | Merged PRs to repos you don’t own (Active contributors route)           |
-| [docs/eligibility-notes.md](./docs/eligibility-notes.md)       | Pointers to official Claude for OSS criteria — re-check before applying |
+| Doc                                                            | Purpose                                                    |
+| -------------------------------------------------------------- | ---------------------------------------------------------- |
+| [docs/contributors-tracker.md](./docs/contributors-tracker.md) | Unique external merged-PR contributors (rolling 12 months) |
 
-Update trackers when you merge someone else’s PR here, or when you land a PR elsewhere. Owner commits do not count as external.
+Update the tracker when you merge someone else’s PR. Owner commits do not count as external. Prefer real, useful contributions — never invent rows or merge low-quality work to pad stats.
 
 Helper (optional): `npm run stats` → [`scripts/update-contributor-stats.sh`](./scripts/update-contributor-stats.sh).
 

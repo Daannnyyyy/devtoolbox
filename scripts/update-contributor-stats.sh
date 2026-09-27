@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # List merged PRs from non-owner authors in the last ~12 months for this repo.
-# Helpful for refreshing docs/contributors-tracker.md — not a perfect eligibility oracle.
+# Helpful for refreshing docs/contributors-tracker.md (community health stats).
 #
 # Limitations (GitHub API / gh):
 # - Lists up to --limit merged PRs (default 200); older history may be truncated.
 # - "Unique external" means author.login != OWNER; bots, co-authors, and renames
 #   need manual review.
-# - Does not prove Claude-for-OSS eligibility; re-check the official page.
+# - This is a convenience helper for community stats — always verify by hand.
 # - Requires gh auth and network access. Search/list APIs have rate limits.
 set -euo pipefail
 
