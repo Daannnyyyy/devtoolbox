@@ -62,6 +62,19 @@ DevToolbox does **not** collect analytics, require accounts, or send tool input 
 
 Planned tools and enhancements are tracked in [ROADMAP.md](./ROADMAP.md).
 
+## Want to help?
+
+New tools are welcome. Each tool is one folder under `src/tools/` (see the template) and is picked up automatically.
+
+Good places to start:
+
+- [#1 UUID generator](https://github.com/Daannnyyyy/devtoolbox/issues/1)
+- [#5 Case converter](https://github.com/Daannnyyyy/devtoolbox/issues/5)
+- [#9 HTML encode / decode](https://github.com/Daannnyyyy/devtoolbox/issues/9)
+- [#10 Number base converter](https://github.com/Daannnyyyy/devtoolbox/issues/10)
+
+Browse all [good first issues](https://github.com/Daannnyyyy/devtoolbox/labels/good%20first%20issue) or open a proposal with the **New tool** issue template. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a PR.
+
 ## Contributing
 
 Contributions are welcome! Please read [CONTRIBUTING.md](./CONTRIBUTING.md) and our [Code of Conduct](./CODE_OF_CONDUCT.md).
