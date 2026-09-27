@@ -25,7 +25,7 @@ npm test
 npm run build
 ```
 
-All of the above must pass.
+All of the above must pass (CI runs the same checks).
 
 ## Coding standards
 
@@ -35,6 +35,26 @@ All of the above must pass.
 - **ESLint + Prettier** — run `npm run lint` and `npm run format` as needed
 - **Accessibility** — label form controls; keep keyboard navigation usable
 - **No secrets** — never commit tokens, `.env` files with secrets, or personal data
+- **No new dependencies** without discussion on the related issue first — prefer Web Crypto and built-in browser APIs
+
+## Architecture: independent tools
+
+Each tool is a **self-contained folder** under `src/tools/<id>/`. The registry discovers tools with Vite `import.meta.glob` and **ignores** `_template`. You never need to edit `src/core/registry.ts` to register a tool.
+
+```
+src/tools/
+  _template/          # starter kit (skipped by registry)
+  base64/
+  json-formatter/
+  unix-timestamp/
+  url-parser/
+  <your-tool>/        # one folder = one tool
+    index.ts          # exports ToolDefinition (default or named `tool`)
+    logic.ts          # pure helpers
+    logic.test.ts     # Vitest unit tests
+```
+
+Suggested categories (reuse when they fit): `Encoding`, `Data`, `Text`, `Time`, `Security`, `Network`, `DevOps`, `Colour`.
 
 ## Adding a tool
 
@@ -45,17 +65,21 @@ All of the above must pass.
    ```
 
 2. Edit `src/tools/my-tool/index.ts`:
-   - Set `id`, `name`, `description`, `category`, and optional `keywords`
-   - Implement `mount(container)` to build the UI
-   - Return a cleanup function from `mount` if you add listeners that must be removed
+   - Set `id` (should match the folder name), `name`, `description`, `category`, and optional `keywords`
+   - Implement `mount(container)` to build the UI with shared CSS classes (`.tool-ui`, `.field`, `.btn`, `.status`, …)
+   - Return a cleanup function from `mount` if you add listeners or timers that must be removed
 
-3. Put pure helpers in `src/tools/my-tool/*.ts` (e.g. `logic.ts`) and UI wiring in `index.ts`.
+3. Put pure helpers in `src/tools/my-tool/logic.ts` (or similar) and keep UI wiring in `index.ts`.
 
 4. Add tests in `src/tools/my-tool/*.test.ts` covering happy paths and edge cases.
 
-5. Do **not** edit `src/core/registry.ts` — tools are discovered via `import.meta.glob`.
+5. Reuse `copyText` / `flashCopy` from `src/core/dom.ts` for clipboard actions.
 
-6. Folder name `_template` is ignored by the registry; never use that name for a real tool.
+6. Do **not** edit `src/core/registry.ts` — tools are discovered via `import.meta.glob`.
+
+7. Folder name `_template` is ignored by the registry; never use that name for a real tool.
+
+Study existing seed tools (`base64`, `json-formatter`, `unix-timestamp`, `url-parser`) for UI and Result-type patterns.
 
 ### ToolDefinition shape
 

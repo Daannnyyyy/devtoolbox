@@ -1,7 +1,7 @@
 name: New tool
 description: Propose a new developer utility for DevToolbox
 title: '[tool] '
-labels: ['enhancement', 'new-tool']
+labels: ['enhancement', 'tool']
 body:
   - type: markdown
     attributes:
