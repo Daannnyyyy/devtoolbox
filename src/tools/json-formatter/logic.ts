@@ -1,6 +1,5 @@
 export type JsonResult =
-  | { ok: true; value: unknown; formatted: string; minified: string }
-  | { ok: false; error: string };
+  { ok: true; value: unknown; formatted: string; minified: string } | { ok: false; error: string };
 
 export function parseJson(input: string): JsonResult {
   const trimmed = input.trim();

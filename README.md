@@ -5,11 +5,13 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 
+**[Live demo](https://daannnyyyy.github.io/devtoolbox/)** — try it in your browser.
+
 **Fast, private developer tools that run entirely in your browser. No accounts, no servers, no data leaving your machine.**
 
 A lightweight, browser-only collection of everyday developer utilities — format, encode, convert, and inspect common data without leaving the tab.
 
-> **Screenshot:** After running `npm run build` (or `npm run dev`), open the app and capture a screenshot for `docs/screenshot.png` if you want a visual in this README.
+![DevToolbox app shell with JSON Formatter](./docs/screenshot.png)
 
 ## Features
 
@@ -32,16 +34,16 @@ npm run dev
 
 Open the URL Vite prints (usually `http://localhost:5173`).
 
-| Script            | Description                          |
-| ----------------- | ------------------------------------ |
-| `npm run dev`     | Start the Vite dev server            |
-| `npm test`        | Run unit tests once                  |
+| Script               | Description                       |
+| -------------------- | --------------------------------- |
+| `npm run dev`        | Start the Vite dev server         |
+| `npm test`           | Run unit tests once               |
 | `npm run test:watch` | Watch mode for tests              |
-| `npm run lint`    | ESLint                               |
-| `npm run format`  | Prettier write                       |
-| `npm run typecheck` | TypeScript check (`tsc --noEmit`) |
-| `npm run build`   | Production build to `dist/`          |
-| `npm run preview` | Preview the production build         |
+| `npm run lint`       | ESLint                            |
+| `npm run format`     | Prettier write                    |
+| `npm run typecheck`  | TypeScript check (`tsc --noEmit`) |
+| `npm run build`      | Production build to `dist/`       |
+| `npm run preview`    | Preview the production build      |
 
 ## How to add a tool
 

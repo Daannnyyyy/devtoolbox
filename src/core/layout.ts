@@ -80,7 +80,8 @@ export function createApp(root: HTMLElement): void {
   updateThemeButton();
 
   themeToggle.addEventListener('click', () => {
-    const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+    const current =
+      document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
     applyTheme(current === 'dark' ? 'light' : 'dark');
     updateThemeButton();
   });

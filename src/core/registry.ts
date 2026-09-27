@@ -36,9 +36,7 @@ export function searchTools(query: string): ToolDefinition[] {
   const q = query.trim().toLowerCase();
   if (!q) return tools;
   return tools.filter((t) => {
-    const hay = [t.name, t.description, t.category, ...(t.keywords ?? [])]
-      .join(' ')
-      .toLowerCase();
+    const hay = [t.name, t.description, t.category, ...(t.keywords ?? [])].join(' ').toLowerCase();
     return hay.includes(q);
   });
 }
