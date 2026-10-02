@@ -43,7 +43,7 @@ export function createApp(root: HTMLElement): void {
           spellcheck="false"
         />
         <nav class="tool-nav" id="tool-nav" aria-label="Available tools"></nav>
-        <p class="sidebar-footer">Private · browser-only</p>
+        <p class="sidebar-footer">Browser-local utilities</p>
       </aside>
       <main class="main" id="main-panel">
         <div class="empty-state" id="empty-state">
