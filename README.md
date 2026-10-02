@@ -56,7 +56,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for coding standards and the PR process
 
 ## Privacy
 
-DevToolbox does **not** collect analytics, require accounts, or send tool input to any server. Your data stays in the tab. Theme preference is stored only in `localStorage` on your device.
+Tool inputs are processed locally in the browser and are not sent to an application backend. DevToolbox does **not** collect analytics or require accounts. Theme preference is stored only in `localStorage` on your device.
 
 ## Roadmap
 
